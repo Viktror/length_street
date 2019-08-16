@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Streets in this city:</h3>
+<div class="card">
+    <div class="card-body">
+        {% for street in streets %}
+            {% for stret in street %}
+            <p>
+                {{ stret }}
+            </p>
+            {% endfor %}
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock content %}
